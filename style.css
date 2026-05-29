@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fffaf2;
+}
+
+#landing{
+     background:
+       linear-gradient(
+        rgba(191, 98, 5, 0.35),
+        rgba(120, 60, 0, 0.45)
+    ),
+        url('siteBg.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.custom-navbar{
+    background-color:#bf6205;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+; 
+}
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: antiquewhite;
+}
+#landing > h1{
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    color: #bf6205;
+}
+
+#contact{
+    background: linear-gradient(
+        to right,
+        #d48a1d,
+        #bf6205
+    );    margin-top: 5rem;
+    padding: 4rem 2rem;
+}
+
+#contact{
+    color: antiquewhite;
+}
+
+/* Vertical separators */
+.contact-info .col-md-4 {
+    position: relative;
+}
+
+.contact-info .col-md-4:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 1px;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hover effect */
+.contact-info .col-md-4 {
+    transition: transform 0.3s ease;
+}
+
+.contact-info .col-md-4:hover {
+    transform: translateY(-6px);
+}
+
+a{
+    color:antiquewhite;
+    text-decoration: none;
+}
+.btn {
+    transition: all 0.3s ease;
+    background-color: #d48a1d;
+    color: antiquewhite;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+    color: #d48a1d;
+    background-color: antiquewhite;
+}
+
+#footer{
+    background-color:#bf6205;
+    color: antiquewhite;
+}
+
+@media (max-width: 768px) {
+
+    #feats {
+        text-align: center;
+    }
+
+    #feats img {
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+    #feats .col-md-7 {
+        margin-top: 1rem;
+    }
+
+    .contact-info .col-md-4:not(:last-child)::after {
+        display: none;
+    }
+
+    #landing {
+        padding: 2rem;
+    }
+}
+
+html[dir="rtl"] {
+    text-align: right;
+}
+
+html[dir="rtl"] .navbar-nav {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+html[dir="rtl"] .ms-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+html[dir="rtl"] .contact-info {
+    direction: rtl;
+}
+
+html[lang="ur"] body {
+    font-family: "Noto Nastaliq Urdu", serif;
+}
+
